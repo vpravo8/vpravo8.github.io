@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="Суд, банкротство, наследство, юрист">
+  <title>Юридический Центр "Ваше Право" г.Сургут | Суд, банкротство, наследство, семейные споры, трудовые споры, жилищные споры, возврат долгов, взыскание убытков, дтп, споры со страховой, лишение прав, штрафы, юрист в городе Сургут</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
+  <link rel="stylesheet" href="assets/et-line-font-plugin/style.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="assets/css/css/mbr-additional.css">
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        var map;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [61.267308, 73.419468],
+                zoom: 17
+            }); 
+            DG.popup().setLatLng(map.getCenter()).setContent('<b>"Ваше Право"</b><br><b style="color:lightgray;">+7-922-253-61-40, +7-952-714-62-66</b><br><p style="color:yellow;">Сургут, ул.Маяковского 57<br>ТЦ Гуливер 4 корпус 4 этаж <b>офис 409</b></p>').openOn(map);
+        });
+    </script>  
+</head>
+
+<body>
+        <div class="call-back-btn" onmousedown="callBackPhone()">
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="profilepicture"><img src="assets/images/phone.png" width="100%" height="100%"></div>
+        </div>
+        
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-modalModalLabel" aria-hidden="true" id="success-modal">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title text-center" id="success-modalLabel">Успешно отправлено</h4>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="text-center">
+                      <button type="button" class="btn btn-primary" id="success-modal-ok">OK</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-modalModalLabel2" aria-hidden="true" id="success-modal2">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-center" id="success-modalLabel2">Успешно отправлено</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="success-modal-ok2">OK</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errFieldsModalLabel" aria-hidden="true" id="errFields-modal">
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title text-center" id="errFieldsLabel">Нужно заполнить все поля!</h4>
+                        </div>
+                        <div class="modal-footer">
+                          <div class="text-center">
+                          <button type="button" class="btn btn-primary" id="errFields-modal-ok">OK</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+            <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="callback-modal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Обратный звонок | "Ваше Право" г.Сургут</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline">
+                            <div class="form-group">
+                              <i class="fa fa-user-o fa-lg" aria-hidden="true" style="padding-left: 20px;padding-right: 10px;"></i>
+                              <label class="sr-only" for="inputName">Имя</label>
+                              <input type="text" class="form-control input-lg" id="inputName" placeholder="Имя">
+                            </div>
+                            <div class="form-group">
+                              <i class="fa fa-phone fa-lg" aria-hidden="true" style="padding-left: 20px;padding-right: 10px;"></i>
+                              <label class="sr-only" for="inputNumber">Телефон</label>
+                              <input type="text" class="form-control input-lg" id="inputNumber" placeholder="номер" pattern="[789][0-9]{9}">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="text-center">
+                        <button type="submit" id="btn-callback-carousel-ok" class="btn btn-primary">ПОЗВОНИТЬ МНЕ</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+<section id="menu-0">
+
+    <nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
+        <div class="container">
+
+            <div class="mbr-table">
+                <div class="mbr-table-cell">
+                        <div class="navbar-brand hidden-xs" style="margin-left: -50px;">
+                                <img style="float:left; padding-right: 10px; margin-top: -10px;" src="assets/images/logo.png" height="55"><br>
+                                <a class="navbar-caption" href="http://vashepravo86.ru">ВАШЕ ПРАВО</a>
+                            </div>
+
+                            <div class="navbar-brand hidden-md">
+                                <img style="float:left; padding-right: 10px; margin-top: -10px;" src="assets/images/logo.png" height="55"><br>
+                                <a class="navbar-caption" href="http://vashepravo86.ru">ВАШЕ ПРАВО</a>
+                            </div>
+
+                </div>
+                <div class="mbr-table-cell">
+
+                    <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="hamburger-icon"></div>
+                    </button>
+
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item dropdown open"><a class="nav-link link" href="http://vashepravo86.ru" style="color:rgb(75, 141, 247);" aria-expanded="false"><i class="icon-home"></i> ГЛАВНАЯ</a></li><li class="nav-item"><a class="nav-link link" href="services.html" aria-expanded="false"><i class="icon-paper-clip"></i> УСЛУГИ</a></li><li class="nav-item dropdown"><a class="nav-link link" href="documents.html" aria-expanded="false"><i class="icon-layers"></i> ДОКУМЕНТЫ</a></li><li class="nav-item"><a class="nav-link link" href="contacts.html" aria-expanded="false"><i class="icon-location-pin"></i> КОНТАКТЫ</a></li><li class="nav-item nav-btn"><button class="nav-link btn btn-white-outline btn-white btn-call" type="button" id="btn-callback-carousel">ЗАКАЗАТЬ ЗВОНОК</button></li></ul>
+                    <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="close-icon"></div>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+</section>
+
+<section class="engine">
+    <a rel="external" href="http://vashepravo86.ru">http://vashepravo86.ru</a>
+</section>
+<section class="mbr-slider mbr-section mbr-section__container carousel slide mbr-section-nopadding mbr-after-navbar" data-ride="carousel" data-keyboard="false" data-wrap="true" data-pause="false" data-interval="5000" id="slider-1">
+    <div>
+        <div>
+            <div>
+                <ol class="carousel-indicators">
+                    <li data-app-prevent-settings="" data-target="#slider-1" data-slide-to="0" class="active hideAll"></li>
+                    <li data-app-prevent-settings="" data-target="#slider-1" data-slide-to="1" class="hideAll"></li>
+                    <li data-app-prevent-settings="" data-target="#slider-1" data-slide-to="2" class="hideAll"></li>
+                    <div class="mbr-arrow mbr-arrow-floating" aria-hidden="true">
+                        <a href="#header3-4" class="btn-border-dark"><i class="mbr-arrow-icon"></i></a>
+                    </div>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    
+                    <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full active" data-bg-video-slide="false" style="background-image: url(assets/images/hammer-620011-2000x1500.jpg);">
+                        <div class="mbr-table-cell">
+                            <div class="mbr-overlay" style="opacity: 0.4;"></div>
+                            <div class="container-slide container">
+                                <div class="row">
+                                    <div class="col-md-8 animated fadeInDown">
+                                      <b class="fontCarousel2">Многофункциональный центр Юридических услуг<br><i class="icon-briefcase"></i> Ваше Право<br>г.Сургут</b>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 animated fadeInUp">
+                                        <b class="fontCarousel"><i class="icon-phone"></i> 8-922-253-61-40</b>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-8 animated fadeInLeft">
+                                            <br>
+                                        <p><button type="button" class="btn btn-primary btn-lg btn-border" id="btn-callback-carousel2">
+                                            ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ &nbsp; <i class="fa fa-phone"></i>
+                                        </button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" data-bg-video-slide="false" style="background-image: url(assets/images/architecture-1359707-2000x1500.jpg);">
+                        <div class="mbr-table-cell">
+                            <div class="mbr-overlay" style="opacity: 0.4;"></div>
+                            <div class="container-slide container">
+                                    <div class="row">
+                                        <div class="col-md-12 animated fadeInDown">
+                                                <b class="fontCarousel3"> Полный спектр юридических<br>и бухгалтерских услуг<br>для компаний и физ.лиц&nbsp;<i class="icon-people"></i></b>
+                                        </div>
+                                        <div class="col-md-8 animated fadeInUp">
+                                                <b class="fontCarousel"><i class="icon-phone"></i> 8-922-253-61-40</b>
+                                            </div>
+                                        <br>
+                                        <div class="col-md-8 animated fadeInLeft">
+                                                <br>
+                                            <p><button type="button" class="btn btn-primary btn-lg btn-border" id="btn-callback-carousel3">
+                                                ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ &nbsp; <i class="fa fa-phone"></i>
+                                            </button></p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div><div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" data-bg-video-slide="false" style="background-image: url(assets/images/background-2850091-2000x1333.jpg);">
+                        <div class="mbr-table-cell">
+                            <div class="mbr-overlay" style="opacity: 0.4;"></div>
+                            <div class="container-slide container">
+                                <div class="row">
+                                    <div class="col-md-12 animated fadeInDown">
+                                        <b class="fontCarousel3"> Скачайте бесплатно образцы<br>документов для суда&nbsp;<i class="icon-docs hidden-xs"></i><br>Исковые заявления, жалобы</b>
+                                    </div>
+                                    <br>
+                                    <div class="col-md-8 animated fadeInLeft">
+                                            <br>
+                                        <p><a class="btn btn-primary btn-lg btn-border" href="documents.html" id="btn-callback-docs">
+                                            СКАЧАТЬ ДОКУМЕНТЫ &nbsp; <i class="fa fa-download"></i>
+                                        </a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a data-app-prevent-settings="" class="left carousel-control hidden-xs" role="button" data-slide="prev" href="#slider-1">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a data-app-prevent-settings="" class="right carousel-control hidden-xs" role="button" data-slide="next" href="#slider-1">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section mbr-section__container article" id="header3-4" style="background-color: rgb(255, 255, 255); padding-top: 120px; padding-bottom: 40px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3 class="mbr-section-title display-2">Услуги для физических лиц</h3>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-cards mbr-section mbr-section-nopadding" id="features3-2" style="background-color: rgb(255, 255, 255);">
+
+    
+
+    <div class="mbr-cards-row row">
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+              <div class="card cart-block">
+                  <div class="card-img"><img src="assets/images/mbr-1-600x400.jpg" class="card-img-top"></div>
+                  <div class="card-block">
+                    <h4 class="card-title">СЕМЕЙНЫЕ СПОРЫ<br><br></h4>
+                    
+                    <p class="card-text">• Алименты<br>• Раздел имущества<br>• Развод<br>• Усыновление&nbsp;<br>• Споры о детях<br></p>
+                    <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel4"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/mbr-600x401.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">ЖИЛИЩНЫЕ СПОРЫ / СПОРЫ С ЖКХ</h4>
+                        
+                        <p class="card-text">• Сопровождение сделок<br>• Приватизация<br>• Выселение / Вселение&nbsp;<br>• Заливы квартир / Порча имущества<br>• Споры ЖКХ<br></p>
+                        <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel5"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/mbr-3-600x400.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">ТРУДОВЫЕ СПОРЫ</h4>
+                        <p class="card-text">• Оспаривание взысканий<br>• Оспаривание записей в трудовой книжке<br>• Взыскание зарплаты<br>• Восстановление на работе<br>• Несчастные случаи на производстве<br><br></p>
+                        <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel6"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/mbr-4-600x400.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">ВОЗВРАТ ДОЛГОВ</h4>
+                        
+                        <p class="card-text">• Взыскание долга через суд<br>• Анализ имущества должника<br>• Работа с приставами<br>• Возбуждение уголовных дел<br>• Взыскание по расписке<br><br></p>
+                        <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel7"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</section>
+
+<section class="mbr-cards mbr-section mbr-section-nopadding" id="features3-k" style="background-color: rgb(255, 255, 255);">
+
+    
+
+    <div class="mbr-cards-row row">
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+              <div class="card cart-block">
+                  <div class="card-img"><img src="assets/images/mbr-5-600x400.jpg" class="card-img-top"></div>
+                  <div class="card-block">
+                    <h4 class="card-title">ЗЕМЕЛЬНЫЕ И<div>НАСЛЕДСТВЕННЫЕ</div><div>СПОРЫ</div></h4>
+                    
+                    <p class="card-text">• Решение проблем с наследством<br>• Оспаривание завещаний<br>• Помощь в сделках с землей<br>• Споры о границах земельных<br>участков<br></p>
+                    <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel8"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/mbr-8-600x400.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">ЗАЩИТА ПРАВ<div>ПОТРЕБИТЕЛЕЙ</div></h4>
+                        
+                        <p class="card-text">• Возврат комиссий по кредитам<br>• Взыскание неустойки<br>• Возврат некачеств. товара<br>• Расторжение договоров и<br>  взыскание денежных средств<br><br></p>
+                        <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel9"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/accident-1409005-19201-600x400.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">ВОЗМЕЩЕНИЕ УЩЕРБА<div>ПРИ ДТП</div><div>СПОРЫ СО СТРАХОВОЙ</div></h4>
+                        
+                        <p class="card-text">• Взыскание выплат по ДТП<br>• Взыскание УТС<br>• Переоценка ущерба ДТП<br>• Оспаривание виновности в ДТП<br><br></p>
+                        <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel10"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/mbr-10-600x400.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">ЛИШЕНИЕ ПРАВ<div>ШТРАФЫ ГИБДД</div></h4>
+                        
+                        <p class="card-text">• Оспаривание штрафов<br>• Оспаривание фотофиксации<br>• Оспаривание лишения прав<br>• Взыскание ущерба, причиненного<br>  ГИБДД<br><br></p>
+                        <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel11"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</section>
+
+<section class="mbr-section article mbr-parallax-background" id="msg-box8-6" style="background-image: url(assets/images/supreme-court-building-1209701-2000x1333.jpg); padding-top: 40px; padding-bottom: 50px;">
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(34, 34, 34);">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-xs-center">
+                <h3 class="mbr-section-title display-2">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h3>
+                <br><br>
+                <form class="form-inline">
+                        <div class="form-group">
+                              <label class="sr-only" for="name">Имя</label>
+                              <input type="text" class="form-control input-lg" id="name" placeholder="Имя">
+                        </div>
+                        <div class="form-group">
+                              <label class="sr-only" for="phone">Телефон</label>
+                              <input type="text" class="form-control input-lg" id="phone" placeholder="Номер" pattern="[789][0-9]{9}">
+                        </div>
+                        <br><br>
+                        <button type="button" id="btn-callback" class="btn btn-primary btn-lg btn-border" onclick="sendEmailCallBack('name','phone', true)">ПОЗВОНИТЬ МНЕ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section mbr-section__container article" id="header3-5" style="background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 40px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3 class="mbr-section-title display-2">Услуги для юридических лиц</h3>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-cards mbr-section mbr-section-nopadding" id="features3-3" style="background-color: rgb(255, 255, 255);">
+    <div class="mbr-cards-row row">
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+              <div class="card cart-block">
+                  <div class="card-img"><img src="assets/images/mbr-6-600x400.jpg" class="card-img-top"></div>
+                  <div class="card-block">
+                    <h4 class="card-title">АРБИТРАЖ</h4>
+                    <h5 class="card-subtitle"></h5>
+                    <p class="card-text">• Взыскание долгов<br>• Взыскание убытков<br>• Взыскание упущенной выгоды<br>• Признание сделки недействительной<br> и прочее</p>
+                    <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel12"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/mbr-600x399.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">ТРУДОВЫЕ СПОРЫ</h4>
+                        <h5 class="card-subtitle"></h5>
+                        <p class="card-text">• Представление интересов в суде<br>• Споры с работниками<br>• Работа с гос. учреждениями<br><br><br></p>
+                        <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel13"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/coworkers.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">АБОНЕНТСКОЕ ОБСЛУЖИВАНИЕ</h4>
+                        <h5 class="card-subtitle"></h5>
+                        <p class="card-text">• Разовые услуги<br>• Сопровождение финансово-хозяйственной деятельности компании<br><br><br></p>
+                        <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel14"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 0px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/mbr-7-600x400.jpg" class="card-img-top"></div>
+                    <div class="card-block">
+                        <h4 class="card-title">ИСПОЛНИТЛЬНОЕ ПРОИЗВОДСТВО</h4>
+                        <h5 class="card-subtitle"></h5>
+                        <p class="card-text">• Предъявление ИЛ<br>• Взыскание долгов<br>• Участие в аресте и прочее<br><br><br></p>
+                        <div class="card-btn"><button class="btn btn-primary" id="btn-callback-carousel15"><strong>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</strong></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section mbr-section__container article" id="header3-i" style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3 class="mbr-section-title display-2">О нас</h3>
+                <small class="mbr-section-subtitle"></small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article mbr-section__container" id="content2-8" style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 60px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 lead"><blockquote><p>Мы оказываем полный спектр услуг физическим лицам и компаниям. За годы практики наши бухгалтера и юристы накопили колоссальный опыт в работе с делами самой разнообразной сложности. Каждый клиент получает персональный подход и внимание к его делу. Для каждого случая наши специалисты найдут максимально эффективное решение.<span style="font-size: 1.09rem; line-height: 1.5;">&nbsp;</span></p><p><span style="font-size: 1.09rem; line-height: 1.5;"><br></span></p><p><span style="font-size: 1.09rem; line-height: 1.5;">Опытный юрист сможет точно сказать Вам, насколько перспективно дело, какие в нем есть нюансы, сильные и слабые стороны, посоветует какие шаги стоит предпринять и чего делать не стоит. В случае, если дело перспективно и есть шансы на победу, Вашим делом займется специалист, который имеет наибольший опыт и знания в делах именно такого типа.</span><br></p></blockquote><blockquote>У нас каждый клиент найдет поддержку и помощь в решении своей проблемы. Грамотный специалист сможет даже в самом безнадежном деле найти возможность получения выигрыша или снижения потерь.</blockquote><blockquote>Профессионализм сотрудников позволяет оказывать услуги самого высокого качества в таких областях, как: налоговое, гражданское, трудовое, административное право.<br><br><footer>Юридический Центр <cite title="Source Title">"Ваше Право" г.Сургут</cite></footer></blockquote></div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section" id="testimonials2-1" style="background-color: rgb(255, 255, 255); padding-top: 0px; padding-bottom: 40px;">
+        <div class="mbr-section mbr-section__container mbr-section__container--middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-xs-center">
+                        <h3 class="mbr-section-title display-2">Отзывы наших клиентов</h3>
+                        <small class="mbr-section-subtitle"></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mbr-section mbr-section-nopadding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="mbr-testimonial card mbr-testimonial-lg">
+                            <div class="card-block"><p>“Юристы Центра «Ваше Право» просто спасли, когда меня несправедливо обвинили в том, что я скрылась с места ДТП и хотели лишить водительских прав. В результате мы суд выйграли! Спасибо!”</p></div>
+                            <div class="mbr-author card-footer">
+                                <div class="mbr-author-img"><img src="assets/images/face3.jpg" class="img-circle"></div>
+                                <div class="mbr-author-name">Aлександра &nbsp;К.<br></div>
+                                <small class="mbr-author-desc"></small>
+                            </div>
+                        </div><div class="mbr-testimonial card mbr-testimonial-lg">
+                            <div class="card-block"><p>“Мне понадобилась помощь во вступлении в наследство.Остался большой участок земли после смерти дедушки. Несмотря на то, что я заявил о своих правах на наследование достаточно поздно, никаких проблем с оформлением не возникло. Юристы Центра «Ваше Право» помогли мне подготовить всю нужную документацию, дали юридическую консультацию касательно моих прав на наследство. И я смог получилть то, что мне полагается по закону”</p></div>
+                            <div class="mbr-author card-footer">
+                                <div class="mbr-author-img"><img src="assets/images/face1.jpg" class="img-circle"></div>
+                                <div class="mbr-author-name">Сергей П.</div>
+                                <small class="mbr-author-desc"></small>
+                            </div>
+                        </div><div class="mbr-testimonial card mbr-testimonial-lg">
+                            <div class="card-block"><p>“Юристы Центра «Ваше Право» помогли мне увеличить алименты от мужа на содержание ребенка. И цены очень приемлимые, в отличии от многих других юридических компаний”</p></div>
+                            <div class="mbr-author card-footer">
+                                <div class="mbr-author-img"><img src="assets/images/face2.jpg" class="img-circle"></div>
+                                <div class="mbr-author-name">Валерия А.</div>
+                                <small class="mbr-author-desc"></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="mbr-section article mbr-parallax-background" id="msg-box8-9" style="background-image: url(assets/images/supreme-court-building-1209701-2000x1333.jpg); padding-top: 40px; padding-bottom: 50px;">
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(34, 34, 34);">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-xs-center">
+                <h3 class="mbr-section-title display-2">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h3>
+                <br><br>
+                <form class="form-inline">
+                        <div class="form-group">
+                              <label class="sr-only" for="name2">Имя</label>
+                              <input type="text" class="form-control input-lg" id="name2" placeholder="Имя">
+                        </div>
+                        <div class="form-group">
+                              <label class="sr-only" for="phone2">Телефон</label>
+                              <input type="text" class="form-control input-lg" id="phone2" placeholder="Номер" pattern="[789][0-9]{9}">
+                        </div>
+                        <br><br>
+                        <button type="button" id="btn-callback" class="btn btn-primary btn-lg btn-border" onclick="sendEmailCallBack('name2','phone2', true)">ПОЗВОНИТЬ МНЕ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-map" >
+        <div class="col-md-12">
+          <div class="row">
+              <body>
+                <div id="map" style="width:100%; height:500px" ></div>
+              </body>
+            </div>
+        </div>
+</section> 
+
+<section class="mbr-section mbr-section-md-padding" id="social-buttons4-j" style="background-color: rgb(46, 46, 46); padding-top: 60px; padding-bottom: 60px;">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-xs-center">
+                <h3 class="mbr-section-title display-2">ПОДПИШИТЕСЬ НА НАС</h3>
+                <div> <a class="btn btn-social" title="Facebook" target="_blank" href=""><i class="socicon socicon-facebook"></i></a>   <a class="btn btn-social" title="Instagram" target="_blank" href=""><i class="socicon socicon-instagram"></i></a>    <a class="btn btn-social" title="VKontakte" target="_blank" href=""><i class="socicon socicon-vkontakte"></i></a>  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="mbr-footer mbr-section mbr-section-md-padding" id="contacts3-c" style="background-color: rgb(46, 46, 46); padding-top: 90px; padding-bottom: 0px !important;">
+    <div class="row">    
+            <div class="mbr-company col-xs-12 col-md-6 col-lg-3">
+                <div class="mbr-company card">
+                    <div><span class="icon-briefcase" style="font-size: 30pt;"><img class="card-img-top"></span></div>
+                    <div class="card-block">
+                        <p>Многофункциональный центр Юридических услуг ВАШЕ ПРАВО<br>г. Сургут</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="list-group-icon"><span class="etl-icon icon-phone mbr-iconfont-company-contacts3"></span></span>
+                            <span class="list-group-text">+7 (922) 253 61 40<br> +7 (952) 714 62 66</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="list-group-icon"><span class="etl-icon icon-map-pin mbr-iconfont-company-contacts3"></span></span>
+                            <span class="list-group-text">г. Сургут ул.Маяковского д.57&nbsp;<br>ТЦ "Гуливер" 4 корпус 4 этаж <br>офис 409</span>
+                        </li>
+                        <li class="list-group-item active">
+                            <span class="list-group-icon"><span class="etl-icon icon-envelope mbr-iconfont-company-contacts3"></span></span>
+                            <span class="list-group-text">Руководитель - irinavp86<a class="text-white">@yandex.</a>ru<br>Общая - vashepravo186@yandex.ru<br></span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="mbr-footer-content col-xs-12 col-md-6 col-lg-3">
+                <h4>Категории</h4>
+                <ul><li>Главная</li><li>Услуги</li><li>Документы</li><li>Контакты</li></ul>
+            </div>
+            <div class="mbr-footer-content col-xs-12 col-md-6 col-lg-3">
+                <p><strong>Контакты</strong><br>Email:<br>Руководитель - irinavp86@yandex.ru<br>Общая - vashepravo186@yandex.ru<br><br>Телефон: +7 (922) 253 61 40&nbsp;<br>+7 (952) 714 62 66&nbsp;<br><br><br><strong>Адрес</strong><br>г. Сургут ул.Маяковского д.57 <br>ТЦ "Гуливер" 4 корпус 4 этаж <br>офис 409</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3" data-form-type="formoid">
+
+                <div data-form-alert="true">
+                    <div hidden="" data-form-alert-success="true">Спасибо!Мы ответим как можно скорее!</div>
+                </div>
+
+                <form>
+                        <div class="form-group">
+                            <label class="form-control-label" for="emailUser">Email<span class="form-asterisk">*</span></label>
+                            <input type="email" class="form-control input-sm input-inverse" name="email" required="" data-form-field="Email" id="emailUser">
+                        </div>
+    
+                        <div class="form-group">
+                            <label class="form-control-label" for="messageUser">Сообщение</label>
+                            <textarea class="form-control input-sm input-inverse" name="message" data-form-field="Message" rows="5" id="messageUser"></textarea>
+                        </div>
+    
+                        <div><button type="button" class="btn btn-sm btn-primary" onclick="sendEmailQuestions()">Отправить ваш вопрос</button></div>
+                </form>
+            </div>
+        </div>
+        
+        <section class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-h" style="background-color: rgb(46, 46, 46); padding-top: 100px; padding-bottom: 15px;">
+        </section>
+    </footer>
+
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smooth-scroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+  <script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/viewport-checker/jquery.viewportchecker.js"></script>
+  <script src="assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
+  <script src="assets/jarallax/jarallax.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  <!-- <script src="js/aos.js"></script> -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("user_DY1y01FEosjwGujIUGEsI");
+     })();
+  </script>
+  <script src="js/script.js"></script>  
+  <!-- <script>
+        AOS.init();
+  </script> -->
+  
+  <input name="animation" type="hidden">
+  </body>
+</html>
